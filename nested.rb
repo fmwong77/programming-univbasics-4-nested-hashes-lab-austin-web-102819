@@ -5,16 +5,9 @@ def hopper
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
-        },
-        :alan_kay => {
-          :known_for => "Object Orientation",
-          :languages => ["Smalltalk", "LISP"]
-        },
-        :dennis_ritchie => {
-          :known_for => "Unix",
-          :languages => ["C"]
         }
      }
+<<<<<<< HEAD
      
      programmer_hash[:known_for] = programmer_hash[:grace_hopper][:known_for]
      programmer_hash[:languages] = programmer_hash[:grace_hopper][:languages]
@@ -23,6 +16,11 @@ def hopper
      programmer_hash.delete(:dennis_ritchie)
      programmer_hash
  		
+=======
+#programmer_hash.delete(:alan_kay)
+#programmer_hash.delete(:dennis_ritchie)
+programmer_hash
+>>>>>>> 8382b92fcd7aefa94fa99766c8e581035b06f73a
 end
 
 def alan_kay_is_known_for
